@@ -1,44 +1,57 @@
 <!DOCTYPE html>
 <html>
+<head>
+	<style>
+		button {
+			color: #ffffff;
+			background-color: #2d63c8;
+			font-size: 19px;
+			border: 1px solid #2d63c8;
+			padding: 15px 50px;
+			cursor: pointer
+		}
+		button:hover {
+			color: #2d63c8;
+			background-color: #ffffff;
+		}
+	</style>
+</head>
 <body>
-Fast Start
-<video width="320" height="240" controls>
-    <source src="https://www.dropbox.com/s/9hn4lrlvwqzo3ve/in_seg_faststart.mp4?raw=1 " type="video/mp4">
-  </video>
-</br>
-Fast Start Disable
-<video width="320" height="240" controls>
-  <source src="https://www.dropbox.com/s/8iu879j8zb0mw6t/in_seg_non_faststart.mp4?raw=1" type="video/mp4">
-</video>
-</br>
-Replace Audio Fast Start
-<video width="320" height="240" controls>
-<source src="https://www.dropbox.com/s/8iu879j8zb0mw6t/replace_audio_faststart.mp4?raw=1" type="video/mp4">
-</video>
-</br>
-Replace Audio Fast Start Disable
-<video width="320" height="240" controls>
-<source src="https://www.dropbox.com/s/8iu879j8zb0mw6t/replace_audio.mp4?raw=1" type="video/mp4">
-</video>
-</br>
-Merge Audio Fast Start
-<video width="320" height="240" controls>
-<source src="https://www.dropbox.com/s/8iu879j8zb0mw6t/both_audio_faststart.mp4?raw=1" type="video/mp4">
-</video>
-</br>
-Merge Audio Fast Start Disable
-<video width="320" height="240" controls>
-<source src="https://www.dropbox.com/s/8iu879j8zb0mw6t/both_audio.mp4?raw=1" type="video/mp4">
-</video>
-</br>
-30 Sec Merge Audio Offset Fast Start
-<video width="320" height="240" controls>
-<source src="https://www.dropbox.com/s/8iu879j8zb0mw6t/both_audio_offset_faststart.mp4?raw=1" type="video/mp4">
-</video>
-</br>
-30 Sec Merge Audio Offset  Fast Start Disable
-<video width="320" height="240" controls>
-<source src="https://www.dropbox.com/s/8iu879j8zb0mw6t/both_audio_offset.mp4?raw=1" type="video/mp4">
-</video>
+	<button 
+    type="button" 
+    name="fastStart" 
+    onclick="document.location='moov_at_start.html'"
+  >
+    Fast Start
+  </button>
+  <br>
+  <br>
+	<button 
+    type="button" 
+    name="fastStart" 
+    onclick="document.location='replace_audio.html'"
+  >
+    Replace Audio
+  </button>
+  <br>
+  <br>
+  <button 
+    type="button" 
+    name="fastStart" 
+    onclick="document.location='merge_audio.html'"
+  >
+    Merge Audio
+  </button>
+  <br>
+  <br>
+  <button 
+    type="button" 
+    name="fastStart" 
+    onclick="document.location='merge_offset.html'"
+  >
+    Merge Audio With Offset
+  </button>
+  <br>
+  <br>
 </body>
 </html>
